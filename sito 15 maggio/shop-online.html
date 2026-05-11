@@ -31,13 +31,23 @@
     <input type="text" id="ricerca" placeholder="Cerca prodotti..." onkeyup="cercaProdotti()">
 
     <div class="filtri">
-
-        <button onclick="filtraprodotti('tutti')">Tutti</button>
-        <button onclick="filtraprodotti('ferrari')">Ferrari</button>
-        <button onclick="filtraprodotti('mercedes')">Mercedes</button>
-        <button onclick="filtraprodotti('redbull')">Red Bull</button>
-
-    </div>
+         <select class="FiltroPrezzo" onchange="filtraPrezzo()">
+            <option value="tutti">Tutti i prezzi</option>
+            <option value="tutti">Prezzo crescente</option>
+            <option value="tutti">Prezzo decrescente</option>
+         </select>
+         <select class="FiltroMarchio" onchange="filtraMarchio()">
+            <option value="ferrari">Ferrari</option>
+            <option value="redbull">Redbull</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="mclaren">McLaren</option>
+            <option value="williams">Williams</option>
+            <option value="BMW">BMW sauber</option>
+         </select>
+         
+        
+    
+</div>
 
 </div>
 <div class="Shop-prodotti">
@@ -45,7 +55,7 @@
 
         <img src="img/Rb21 Japan.jpg" alt="Prodotto F1">
 
-        <div class="product-info">
+        <div class="product-info" data-brand="redbull" data-price="73.99">
             <h3 class="product-title">Modellino 1:43 RedBull </h3>
 
             <p class="product-description">
@@ -62,13 +72,51 @@
     </div>
      <div class="prodotto">
 
-        <img src="img/Rb21 Japan.jpg" alt="Prodotto F1">
+        <img src="img/F108.webp" alt="Prodotto F1"  data-brand="bmw" data-price="92.99">
 
         <div class="product-info">
-            <h3 class="product-title">Modellino 1:43 RedBull </h3>
+            <h3 class="product-title">Modellino 1:43 BMW SAUBER </h3>
 
             <p class="product-description">
-                Modellino 1:43 RedBull RB21 2025 Japan Grand Prix special edition Max Verstappen n.33
+                Modellino 1:43 BMW SAUBER 2008 Rober Kubica
+            </p>
+
+            <span class="product-price">€92.99</span>
+
+            <button class="aggiungi">
+                Aggiungi al carrello
+            </button>
+        </div>
+
+    </div>
+     <div class="prodotto">
+
+        <img src="img/F2002.webp" alt="Prodotto F1"  data-brand="ferrari" data-price="123.99">
+
+        <div class="product-info">
+            <h3 class="product-title">Modellino 1:43 Ferrari </h3>
+
+            <p class="product-description">
+                Modellino 1:43 Ferrari F2002 anno 2002 Michael Schumacher
+            </p>
+
+            <span class="product-price">€123.99</span>
+
+            <button class="aggiungi">
+                Aggiungi al carrello
+            </button>
+        </div>
+
+    </div>
+     <div class="prodotto">
+
+        <img src="img/MCL39.jpg" alt="Prodotto F1"  data-brand="mclaren" data-price="49.99">
+
+        <div class="product-info">
+            <h3 class="product-title">Modellino 1:43 McLaren </h3>
+
+            <p class="product-description">
+                Modellino 1:43 McLaren MCL39 anno 2025 Lando Norris
             </p>
 
             <span class="product-price">€73.99</span>
@@ -81,51 +129,13 @@
     </div>
      <div class="prodotto">
 
-        <img src="img/Rb21 Japan.jpg" alt="Prodotto F1">
+        <img src="img/RB6.jpeg" alt="Prodotto F1"  data-brand="redbull" data-price="68.99">
 
         <div class="product-info">
             <h3 class="product-title">Modellino 1:43 RedBull </h3>
 
             <p class="product-description">
-                Modellino 1:43 RedBull RB21 2025 Japan Grand Prix special edition Max Verstappen n.33
-            </p>
-
-            <span class="product-price">€73.99</span>
-
-            <button class="aggiungi">
-                Aggiungi al carrello
-            </button>
-        </div>
-
-    </div>
-     <div class="prodotto">
-
-        <img src="img/Rb21 Japan.jpg" alt="Prodotto F1">
-
-        <div class="product-info">
-            <h3 class="product-title">Modellino 1:43 RedBull </h3>
-
-            <p class="product-description">
-                Modellino 1:43 RedBull RB21 2025 Japan Grand Prix special edition Max Verstappen n.33
-            </p>
-
-            <span class="product-price">€73.99</span>
-
-            <button class="aggiungi">
-                Aggiungi al carrello
-            </button>
-        </div>
-
-    </div>
-     <div class="prodotto">
-
-        <img src="img/Rb21 Japan.jpg" alt="Prodotto F1">
-
-        <div class="product-info">
-            <h3 class="product-title">Modellino 1:43 RedBull </h3>
-
-            <p class="product-description">
-                Modellino 1:43 RedBull RB21 2025 Japan Grand Prix special edition Max Verstappen n.33
+                Modellino 1:43 RedBull RB6 anno 2010 Sebastian Vettel
             </p>
 
             <span class="product-price">€73.99</span>

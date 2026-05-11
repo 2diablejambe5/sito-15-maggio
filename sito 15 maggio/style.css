@@ -90,27 +90,20 @@ p{
 .titolo-principale{
     
     text-align: center;
-    font-size: 48px;
+    margin-top: 60px;
+    font-size: 100px;
 }
 .top-seller{
    color: rgb(189, 0, 0);
     text-align: center;
     font-size: 32px; 
-}
-
-
-.titolo-principale{
-    text-align: center;
-    margin-top: 60px;
-    font-size: 50px;
-}
-
-.top-seller{
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
-   
 }
+
+
+
+
 
 
 .prodotti{
@@ -310,4 +303,10 @@ p{
     .prodotto img{
         height: 200px;
     }
+}
+.titoloP{
+  color:green;
+}
+.titoloC{
+    color:white;
 }
