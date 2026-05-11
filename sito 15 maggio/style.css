@@ -304,9 +304,43 @@ p{
         height: 200px;
     }
 }
+.shop-title{
+    text-align:center;
+}
 .titoloP{
   color:green;
 }
 .titoloC{
     color:white;
+}
+.shop-comandi{
+    display: flex;
+    flex-direction: column;
+    Margin-left:100px;
+   
+    
+}
+.ricerca{
+    width:300px;
+    
+    text-align:center;
+    background-color: rgb(10, 10, 10);
+    padding:10px;
+    border-radius:30px;
+    border:2px solid rgb(96, 0, 0);
+    transition: 300ms;
+   
+}
+.ricerca:hover{
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.427);
+    border:2px solid red;
+}
+.filtri{
+    justify-content: center;
+
+
+}
+.filtri select{
+    border:2px solid red;
+    margin-top:20px;
 }
