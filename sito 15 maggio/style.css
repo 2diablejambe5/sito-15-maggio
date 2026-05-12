@@ -120,6 +120,7 @@ p{
 
 .prodotti{
     display: flex;
+    
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
