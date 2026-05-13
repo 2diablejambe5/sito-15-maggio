@@ -557,14 +557,34 @@ p{
     
 }
 .img-sopra-cart{
-    height:150px;
+    width: 340px;
+    height: 250px;
+    
 }
 .prodotto-cart{
     display: flex;
-    text-align: left;
+    margin-left: 140px;
+    width: 800px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+    color: white;
+
+    margin-top:30px;
+    
+  
 }
+
 .prodotto-info-cart{
-    width: 100%;
+    width: 430px;
+    height: 250px;
 }
 .prodotto-cart h3{
    
@@ -624,4 +644,21 @@ p{
 .bottoneSconto:hover{
    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.427);
    border: 2px solid red;
+}
+#acquista{
+    color: rgb(160, 0, 0);
+    background-color: rgb(10, 10, 10);
+    border:2px solid rgb(126, 0, 0);
+    padding:7px;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#acquista:hover{
+   box-shadow: 0 5px 20px rgba(255, 0, 0, 0.427);
+   border: 2px solid red;
+}
+#acquista a{
+    text-decoration: none;
+    color: rgb(160, 0, 0);
 }
