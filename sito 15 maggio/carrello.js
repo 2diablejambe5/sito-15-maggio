@@ -32,7 +32,7 @@ function aggiornaRiepilogo(){
     let sconto=(scontoApplicato/100)*subtotale
     let totale=subtotale-sconto
     let spedizione 
-    if(totale<SOGLIA_SPEDIZIONE_GRATUITA){
+    if(subtotale<SOGLIA_SPEDIZIONE_GRATUITA){
         spedizione=SPEDIZIONE
     }
     else{

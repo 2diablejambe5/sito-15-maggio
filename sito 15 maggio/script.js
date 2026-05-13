@@ -52,14 +52,16 @@ document.querySelectorAll(".aggiungi").forEach(button=>{button.addEventListener(
         let prezzo=parseFloat(prodotto.getAttribute("data-price"))
         let img=prodotto.querySelector(".img-sopra").getAttribute("src")
         let carrello=JSON.parse(localStorage.getItem("carrello"))||[]
-        let esiste=carrello.find(a=>a.nome===nome)
+        let desc=prodotto.querySelector("p").innerText
+        let esiste=carrello.find((a=>a.nome===nome)&&(a=>a.desc===desc))
+        
         if(esiste){
              if(esiste.quantita<10){
                 esiste.quantita++
              }
         }
         else{
-            carrello.push({nome,prezzo,img,quantita:1})
+            carrello.push({nome,prezzo,img,desc,quantita:1})
         }
         localStorage.setItem("carrello",JSON.stringify(carrello))
          alert(nome+"è stato aggiunto al carrello")
