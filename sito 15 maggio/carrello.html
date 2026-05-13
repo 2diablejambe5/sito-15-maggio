@@ -32,6 +32,26 @@
     </div>
 
 </nav>
+<h1 class="shop-title">IL TUO CARRELLO</h1>
+<div id="carrello-prodotti">
     
+</div>
+
+<div id="carrello-riepilogo" class="carrello-riepilogo">
+    <h2>Riepilogo ordine</h2>
+    <div class="sconto-box">
+        <input type="text" id="codice-input" placeholder="Codice sconto">
+        <button onclick="applicaSconto()">Applica</button>
+        <p id="sconto-msg"></p>
+    </div>
+    <p>Subtotale: €<span id="subtotale">0.00</span></p>
+    <p id="riga-sconto"  class="sconto-riga">Sconto: -€<span id="importo-sconto">0.00</span></p>
+    <p>Spedizione: <span id="spedizione">€5.99</span></p>
+    
+    <p><strong>Totale: €<span id="totale">0.00</span></strong></p>
+    <button id="acquista-btn">Procedi all'acquisto</button>
+</div>
+
+    <script src="carrello.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@
 
 <div class="shop-comandi">
 
-    <input type="text" id="ricerca" class="ricerca" placeholder="Cerca prodotti..." onkeyup="cercaProdotti()">
+    <input type="text" id="ricerca" class="ricerca" placeholder="Cerca prodotti..." onkeyup="filtraRicerca()">
 
     <div class="filtri">
          <select class="FiltroPrezzo" onchange="filtraPrezzo()">
@@ -45,7 +45,7 @@
             <option value="cre">Prezzo crescente</option>
             <option value="dec">Prezzo decrescente</option>
          </select>
-         <select class="FiltroMarchio" onchange="filtraMarchio()">
+         <select class="FiltroMarchio" onchange="filtraRicerca()">
             <option value="all">Tutti</option>
             <option value="ferrari">Ferrari</option>
             <option value="redbull">Redbull</option>
@@ -462,7 +462,7 @@
             <h3 class="product-title">Modellino 1:43 Toro Rosso </h3>
 
             <p class="product-description">
-                Modellino 1:43 RedBull Toro Rosso 2008 Sebastian Vettel
+                Modellino 1:43 RedBull Toro Rosso STR3 2008 Sebastian Vettel
             </p>
 
             <span class="product-price">€74.99</span>
